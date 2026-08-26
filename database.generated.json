@@ -99,7 +99,190 @@
         2017,
         2018
       ],
-      "transmission": "manuelle"
+      "transmission": "manuelle",
+      "maintenance": {
+        "engine_oil": {
+          "km": 30000,
+          "months": 24,
+          "severe_km": 15000,
+          "severe_months": 12,
+          "note": "Candidat IA — à vérifier",
+          "items": [],
+          "source_name": "Renault - Plan d'entretien officiel",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:27:34.260Z"
+        },
+        "gearbox_oil": {
+          "km": null,
+          "months": null,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Pas de préconisation de remplacement par le constructeur pour les boîtes manuelles.",
+          "items": [],
+          "source_name": "Renault - Plan d'entretien officiel",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:27:34.260Z"
+        },
+        "differential_oil": {
+          "status": "not_applicable",
+          "note": "Véhicule traction avant, pas de différentiel séparé.",
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:27:34.260Z"
+        },
+        "transfer_case_oil": {
+          "status": "not_applicable",
+          "note": "Véhicule traction avant, pas de boîte de transfert.",
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:27:34.260Z"
+        },
+        "brake_fluid": {
+          "km": null,
+          "months": 24,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Candidat IA — à vérifier",
+          "items": [],
+          "source_name": "Renault - Plan d'entretien officiel",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:27:34.260Z"
+        },
+        "coolant": {
+          "km": 150000,
+          "months": 60,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Candidat IA — à vérifier",
+          "items": [],
+          "source_name": "Renault - Plan d'entretien officiel",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:27:34.260Z"
+        },
+        "cabin_filter": {
+          "km": 30000,
+          "months": 12,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Candidat IA — à vérifier",
+          "items": [],
+          "source_name": "Renault - Plan d'entretien officiel",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:27:34.260Z"
+        },
+        "air_filter": {
+          "km": 60000,
+          "months": 48,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Candidat IA — à vérifier",
+          "items": [],
+          "source_name": "Renault - Plan d'entretien officiel",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:27:34.260Z"
+        },
+        "fuel_filter": {
+          "km": 60000,
+          "months": 48,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Candidat IA — à vérifier",
+          "items": [],
+          "source_name": "Renault - Plan d'entretien officiel",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:27:34.260Z"
+        },
+        "timing_belt": {
+          "km": 150000,
+          "months": 72,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Candidat IA — à vérifier",
+          "items": [],
+          "source_name": "Renault - Plan d'entretien officiel",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:27:34.260Z"
+        },
+        "timing_chain": {
+          "status": "not_applicable",
+          "note": "Moteur K9K équipé d'une courroie de distribution.",
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:27:34.260Z"
+        },
+        "accessory_belt": {
+          "km": 150000,
+          "months": 72,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Généralement remplacée avec la courroie de distribution.",
+          "items": [],
+          "source_name": "Renault - Plan d'entretien officiel",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:27:34.260Z"
+        },
+        "visual_checks": {
+          "km": 30000,
+          "months": 24,
+          "severe_km": 15000,
+          "severe_months": 12,
+          "note": "Contrôles visuels effectués à chaque révision. La liste exacte des points de contrôle est détaillée dans le plan d'entretien officiel.",
+          "items": [],
+          "source_name": "Renault - Plan d'entretien officiel",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:27:34.260Z"
+        },
+        "electronic_checks": {
+          "km": 30000,
+          "months": 24,
+          "severe_km": 15000,
+          "severe_months": 12,
+          "note": "Contrôles électroniques effectués à chaque révision. La liste exacte des points de contrôle est détaillée dans le plan d'entretien officiel.",
+          "items": [],
+          "source_name": "Renault - Plan d'entretien officiel",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:27:34.260Z"
+        }
+      }
     },
     {
       "id": "peugeot_208_1_2_puretech_82_2016_2019",
@@ -114,7 +297,204 @@
         2018,
         2019
       ],
-      "transmission": "manuelle"
+      "transmission": "manuelle",
+      "maintenance": {
+        "engine_oil": {
+          "km": 20000,
+          "months": 12,
+          "severe_km": 10000,
+          "severe_months": 6,
+          "note": "Utiliser une huile moteur conforme à la norme PSA B71 2312.",
+          "items": [],
+          "source_name": "Plan d'entretien constructeur (Peugeot/Citroën)",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:28:04.760Z"
+        },
+        "gearbox_oil": {
+          "km": null,
+          "months": null,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Généralement considéré comme 'à vie' par le constructeur, mais un remplacement est recommandé par certains experts après 100 000 - 150 000 km pour la longévité.",
+          "items": [],
+          "source_name": "Plan d'entretien constructeur (Peugeot/Citroën)",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:28:04.760Z"
+        },
+        "differential_oil": {
+          "status": "not_applicable",
+          "note": "Véhicule à traction avant, pas de différentiel séparé.",
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:28:04.760Z"
+        },
+        "transfer_case_oil": {
+          "status": "not_applicable",
+          "note": "Véhicule à traction avant, pas de boîte de transfert.",
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:28:04.760Z"
+        },
+        "brake_fluid": {
+          "km": null,
+          "months": 24,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Remplacement tous les 2 ans, indépendamment du kilométrage.",
+          "items": [],
+          "source_name": "Plan d'entretien constructeur (Peugeot/Citroën)",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:28:04.760Z"
+        },
+        "coolant": {
+          "km": 175000,
+          "months": 120,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Utiliser un liquide de refroidissement de type G33/Type D (longue durée).",
+          "items": [],
+          "source_name": "Plan d'entretien constructeur (Peugeot/Citroën)",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:28:04.760Z"
+        },
+        "cabin_filter": {
+          "km": 20000,
+          "months": 12,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Remplacement annuel ou tous les 20 000 km.",
+          "items": [],
+          "source_name": "Plan d'entretien constructeur (Peugeot/Citroën)",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:28:04.760Z"
+        },
+        "air_filter": {
+          "km": 40000,
+          "months": 24,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Remplacement tous les 2 ans ou tous les 40 000 km.",
+          "items": [],
+          "source_name": "Plan d'entretien constructeur (Peugeot/Citroën)",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:28:04.760Z"
+        },
+        "fuel_filter": {
+          "km": null,
+          "months": null,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Généralement non prévu en remplacement régulier pour les moteurs essence, souvent intégré à la pompe à carburant et considéré 'à vie'.",
+          "items": [],
+          "source_name": "Plan d'entretien constructeur (Peugeot/Citroën)",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:28:04.760Z"
+        },
+        "timing_belt": {
+          "km": 100000,
+          "months": 72,
+          "severe_km": 60000,
+          "severe_months": 72,
+          "note": "Courroie de distribution 'humide'. Intervalle révisé par le constructeur en raison de problèmes de fiabilité. Vérification visuelle de l'état de la courroie à chaque révision annuelle est impérative. Pour les véhicules produits avant 2017, l'intervalle peut être plus court (ex: 60 000 km ou 6 ans).",
+          "items": [],
+          "source_name": "Plan d'entretien constructeur (Peugeot/Citroën) - Révision des intervalles",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:28:04.760Z"
+        },
+        "timing_chain": {
+          "status": "not_applicable",
+          "note": "Ce moteur utilise une courroie de distribution, pas une chaîne.",
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:28:04.760Z"
+        },
+        "accessory_belt": {
+          "km": 100000,
+          "months": 72,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Souvent remplacée en même temps que la courroie de distribution.",
+          "items": [],
+          "source_name": "Plan d'entretien constructeur (Peugeot/Citroën)",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:28:04.760Z"
+        },
+        "visual_checks": {
+          "km": 20000,
+          "months": 12,
+          "severe_km": 10000,
+          "severe_months": 6,
+          "note": "Contrôles visuels systématiques à chaque révision.",
+          "items": [
+            "Niveaux de liquides (frein, lave-glace)",
+            "État et pression des pneus",
+            "Fonctionnement de l'éclairage et de la signalisation",
+            "État des balais d'essuie-glace",
+            "État des freins (plaquettes, disques)",
+            "Absence de fuites (moteur, boîte, freins)",
+            "État du système d'échappement",
+            "État des éléments de suspension et de direction",
+            "Vérification de la courroie de distribution (visuelle, pour le 1.2 PureTech)"
+          ],
+          "source_name": "Plan d'entretien constructeur (Peugeot/Citroën)",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:28:04.760Z"
+        },
+        "electronic_checks": {
+          "km": 20000,
+          "months": 12,
+          "severe_km": 10000,
+          "severe_months": 6,
+          "note": "Contrôles électroniques à chaque révision.",
+          "items": [
+            "Lecture des codes défauts (diagnostic électronique)",
+            "Vérification de l'état de la batterie",
+            "Mise à jour des calculateurs (si nécessaire et disponible)"
+          ],
+          "source_name": "Plan d'entretien constructeur (Peugeot/Citroën)",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:28:04.760Z"
+        }
+      }
     },
     {
       "id": "toyota_yaris_hybrid_100_2016_2020",
@@ -130,7 +510,184 @@
         2019,
         2020
       ],
-      "transmission": "CVT"
+      "transmission": "CVT",
+      "maintenance": {
+        "engine_oil": {
+          "km": 15000,
+          "months": 12,
+          "severe_km": 7500,
+          "severe_months": 6,
+          "note": "Utiliser une huile 0W-20 ou équivalent, conforme aux spécifications Toyota.",
+          "items": [],
+          "source_name": "Toyota Service Schedule",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:29:06.141Z"
+        },
+        "gearbox_oil": {
+          "status": "not_applicable",
+          "note": "L'huile de la transmission e-CVT est généralement considérée comme 'à vie' et ne fait pas l'objet d'un remplacement programmé par Toyota.",
+          "source_name": "Toyota Service Schedule",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:29:06.141Z"
+        },
+        "differential_oil": {
+          "status": "not_applicable",
+          "note": "Le différentiel est intégré à la transmission e-CVT et ne fait pas l'objet d'un remplacement programmé.",
+          "source_name": "Toyota Service Schedule",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:29:06.141Z"
+        },
+        "transfer_case_oil": {
+          "status": "not_applicable",
+          "note": "Véhicule à traction avant, pas de boîte de transfert séparée.",
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:29:06.141Z"
+        },
+        "brake_fluid": {
+          "km": null,
+          "months": 24,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Remplacer le liquide de frein tous les 2 ans, quelle que soit la distance parcourue.",
+          "items": [],
+          "source_name": "Toyota Service Schedule",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:29:06.142Z"
+        },
+        "coolant": {
+          "km": 150000,
+          "months": 120,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Premier remplacement du liquide de refroidissement (SLLC) à 150 000 km ou 10 ans, puis tous les 75 000 km ou 5 ans. Concerne le circuit moteur et onduleur.",
+          "items": [],
+          "source_name": "Toyota Service Schedule",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:29:06.142Z"
+        },
+        "cabin_filter": {
+          "km": 15000,
+          "months": 12,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Remplacer le filtre d'habitacle.",
+          "items": [],
+          "source_name": "Toyota Service Schedule",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:29:06.142Z"
+        },
+        "air_filter": {
+          "km": 30000,
+          "months": 24,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Remplacer le filtre à air du moteur.",
+          "items": [],
+          "source_name": "Toyota Service Schedule",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:29:06.142Z"
+        },
+        "fuel_filter": {
+          "status": "not_applicable",
+          "note": "Le filtre à carburant est généralement intégré à la pompe à carburant et n'est pas un élément de remplacement programmé.",
+          "source_name": "Toyota Service Schedule",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:29:06.142Z"
+        },
+        "timing_belt": {
+          "status": "not_applicable",
+          "note": "Le moteur utilise une chaîne de distribution, pas une courroie.",
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:29:06.142Z"
+        },
+        "timing_chain": {
+          "status": "not_applicable",
+          "note": "La chaîne de distribution est conçue pour la durée de vie du moteur et ne fait pas l'objet d'un remplacement programmé, seulement d'une inspection.",
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:29:06.142Z"
+        },
+        "accessory_belt": {
+          "status": "not_applicable",
+          "note": "La courroie d'accessoires est inspectée à chaque entretien et remplacée si nécessaire, il n'y a pas d'intervalle de remplacement fixe programmé.",
+          "source_name": "Toyota Service Schedule",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:29:06.142Z"
+        },
+        "visual_checks": {
+          "km": 15000,
+          "months": 12,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Contrôles visuels standards du véhicule.",
+          "items": [
+            "Niveaux de fluides",
+            "Pneus (pression, usure)",
+            "Freins (usure plaquettes/disques)",
+            "Éclairage",
+            "Essuie-glaces",
+            "Suspension",
+            "Direction",
+            "Échappement",
+            "Batterie 12V"
+          ],
+          "source_name": "Toyota Service Schedule",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:29:06.142Z"
+        },
+        "electronic_checks": {
+          "km": 15000,
+          "months": 12,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Contrôles électroniques du système moteur et hybride.",
+          "items": [
+            "Lecture des codes défaut (OBD)",
+            "Vérification du système hybride",
+            "Mise à jour logicielle (si disponible)"
+          ],
+          "source_name": "Toyota Service Schedule",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:29:06.142Z"
+        }
+      }
     },
     {
       "id": "tesla_model3_long_range_2017_2025",
@@ -150,7 +707,166 @@
         2024,
         2025
       ],
-      "transmission": "automatique"
+      "transmission": "automatique",
+      "maintenance": {
+        "engine_oil": {
+          "status": "not_applicable",
+          "note": "Non applicable",
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:29:42.987Z"
+        },
+        "gearbox_oil": {
+          "status": "not_applicable",
+          "note": "Le liquide de transmission est considéré comme à vie par le fabricant et n'est pas soumis à un remplacement programmé.",
+          "source_name": "Tesla Support France",
+          "source_url": "https://www.tesla.com/fr_FR/support/car-maintenance",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:29:42.987Z"
+        },
+        "differential_oil": {
+          "status": "not_applicable",
+          "note": "L'huile de différentiel est intégrée au système de transmission et n'est pas soumise à un remplacement programmé.",
+          "source_name": "Tesla Support France",
+          "source_url": "https://www.tesla.com/fr_FR/support/car-maintenance",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:29:42.987Z"
+        },
+        "transfer_case_oil": {
+          "status": "not_applicable",
+          "note": "Non applicable",
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:29:42.987Z"
+        },
+        "brake_fluid": {
+          "km": null,
+          "months": 48,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Vérifier le liquide de frein tous les 2 ans et le remplacer tous les 4 ans.",
+          "items": [],
+          "source_name": "Tesla Support France",
+          "source_url": "https://www.tesla.com/fr_FR/support/car-maintenance",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:29:42.987Z"
+        },
+        "coolant": {
+          "km": null,
+          "months": null,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Le niveau de liquide de refroidissement de la batterie doit être vérifié tous les 2 ans ou 40 000 km. Aucun intervalle de remplacement programmé n'est spécifié.",
+          "items": [],
+          "source_name": "Tesla Support France",
+          "source_url": "https://www.tesla.com/fr_FR/support/car-maintenance",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:29:42.987Z"
+        },
+        "cabin_filter": {
+          "km": 40000,
+          "months": 24,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Candidat IA — à vérifier",
+          "items": [],
+          "source_name": "Tesla Support France",
+          "source_url": "https://www.tesla.com/fr_FR/support/car-maintenance",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:29:42.987Z"
+        },
+        "air_filter": {
+          "status": "not_applicable",
+          "note": "Non applicable",
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:29:42.987Z"
+        },
+        "fuel_filter": {
+          "status": "not_applicable",
+          "note": "Non applicable",
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:29:42.987Z"
+        },
+        "timing_belt": {
+          "status": "not_applicable",
+          "note": "Non applicable",
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:29:42.987Z"
+        },
+        "timing_chain": {
+          "status": "not_applicable",
+          "note": "Non applicable",
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:29:42.987Z"
+        },
+        "accessory_belt": {
+          "status": "not_applicable",
+          "note": "Non applicable",
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:29:42.987Z"
+        },
+        "visual_checks": {
+          "km": 10000,
+          "months": 12,
+          "severe_km": 20000,
+          "severe_months": 12,
+          "note": "La rotation, l'équilibrage et l'inspection des pneus sont recommandés tous les 10 000 km ou 12 mois. Le nettoyage et la lubrification des étriers de frein sont recommandés tous les 12 mois ou 20 000 km dans les régions où les routes sont salées.",
+          "items": [
+            "Rotation, équilibrage et inspection des pneus",
+            "Inspection des freins (usure des plaquettes et disques, fonctionnement)",
+            "Vérification des niveaux de liquides (lave-glace, liquide de frein, liquide de refroidissement batterie)",
+            "Inspection des composants de suspension et de direction",
+            "Vérification de l'éclairage et des essuie-glaces"
+          ],
+          "source_name": "Tesla Support France",
+          "source_url": "https://www.tesla.com/fr_FR/support/car-maintenance",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:29:42.987Z"
+        },
+        "electronic_checks": {
+          "km": null,
+          "months": null,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Les vérifications électroniques sont généralement effectuées lors des services d'entretien ou via des diagnostics à distance. Aucun intervalle spécifique n'est publié pour des vérifications électroniques distinctes.",
+          "items": [],
+          "source_name": "Tesla Support France",
+          "source_url": "https://www.tesla.com/fr_FR/support/car-maintenance",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:29:42.987Z"
+        }
+      }
     },
     {
       "id": "byd_atto3_electric_2022_2025",
@@ -165,7 +881,165 @@
         2024,
         2025
       ],
-      "transmission": "automatique"
+      "transmission": "automatique",
+      "maintenance": {
+        "engine_oil": {
+          "status": "not_applicable",
+          "note": "Véhicule électrique, pas d'huile moteur.",
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:29:57.277Z"
+        },
+        "gearbox_oil": {
+          "km": null,
+          "months": null,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Candidat IA — à vérifier",
+          "items": [],
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:29:57.277Z"
+        },
+        "differential_oil": {
+          "status": "not_applicable",
+          "note": "Généralement intégré à l'unité de propulsion ou non applicable pour les véhicules électriques.",
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:29:57.277Z"
+        },
+        "transfer_case_oil": {
+          "status": "not_applicable",
+          "note": "Non applicable pour la plupart des véhicules électriques sans boîte de transfert traditionnelle.",
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:29:57.277Z"
+        },
+        "brake_fluid": {
+          "km": null,
+          "months": null,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Candidat IA — à vérifier",
+          "items": [],
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:29:57.277Z"
+        },
+        "coolant": {
+          "km": null,
+          "months": null,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Candidat IA — à vérifier",
+          "items": [],
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:29:57.277Z"
+        },
+        "cabin_filter": {
+          "km": null,
+          "months": null,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Candidat IA — à vérifier",
+          "items": [],
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:29:57.277Z"
+        },
+        "air_filter": {
+          "status": "not_applicable",
+          "note": "Véhicule électrique, pas de filtre à air moteur.",
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:29:57.277Z"
+        },
+        "fuel_filter": {
+          "status": "not_applicable",
+          "note": "Véhicule électrique, pas de filtre à carburant.",
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:29:57.277Z"
+        },
+        "timing_belt": {
+          "status": "not_applicable",
+          "note": "Véhicule électrique, pas de courroie de distribution.",
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:29:57.277Z"
+        },
+        "timing_chain": {
+          "status": "not_applicable",
+          "note": "Véhicule électrique, pas de chaîne de distribution.",
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:29:57.277Z"
+        },
+        "accessory_belt": {
+          "status": "not_applicable",
+          "note": "Véhicule électrique, les accessoires sont généralement électriques et ne nécessitent pas de courroie.",
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "updated_at": "2026-08-26T21:29:57.277Z"
+        },
+        "visual_checks": {
+          "km": null,
+          "months": null,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Candidat IA — à vérifier",
+          "items": [],
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:29:57.277Z"
+        },
+        "electronic_checks": {
+          "km": null,
+          "months": null,
+          "severe_km": null,
+          "severe_months": null,
+          "note": "Candidat IA — à vérifier",
+          "items": [],
+          "source_name": "IA",
+          "source_url": "",
+          "source_type": "ai",
+          "confidence": "low",
+          "status": "ai_candidate",
+          "updated_at": "2026-08-26T21:29:57.277Z"
+        }
+      }
     }
   ]
 }
