@@ -24,12 +24,12 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Enrich database with Gemini
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: gemini-1.5-flash-latest
+          GEMINI_MODEL: gemini-2.5-flash
           ENRICH_MAX: 50
           ENRICH_DELAY_MS: 3000
         run: node scripts/enrich-db.mjs
