@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoEntretien Pro</title>
+  <meta name="description" content="Base de préconisations d'entretien automobile avec complétion Gemini, sources et validation">
+  <meta name="theme-color" content="#1e40af">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🚗 AutoEntretien Pro</h1>
+
+    <div class="actions">
+      <button class="btn btn-secondary" onclick="document.getElementById('bgInput').click()">🖼️ Fond</button>
+      <input
+        type="file"
+        id="bgInput"
+        accept="image/jpeg,image/jpg,image/png"
+        style="display:none"
+        onchange="uploadBackground(event)"
+      >
+
+      <button class="btn" onclick="generatePDF()">📄 PDF</button>
+      <button class="btn btn-secondary" onclick="openAdminModal()">🔐 Admin</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="filters">
+      <label>Origine</label>
+      <div class="origin-badges" id="originBadges"></div>
+
+      <div class="filter-grid">
+        <div class="filter-group">
+          <label>Marque</label>
+          <select id="brandSelect">
+            <option value="">-- Choisir une marque --</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label>Modèle</label>
+          <select id="modelSelect">
+            <option value="">-- Choisir un modèle --</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label>Motorisation</label>
+          <select id="engineSelect">
+            <option value="">-- Choisir une motorisation --</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label>Année</label>
+          <select id="yearSelect">
+            <option value="">-- Choisir une année --</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div id="result"></div>
+
+    <div class="admin-panel" id="adminPanel">
+      <div class="result-card">
+        <h2>🔐 Panneau administrateur</h2>
+
+        <p style="color:var(--muted); margin-bottom:1rem;">
+          Vous pouvez importer une base JSON, charger une base distante, configurer Gemini,
+          compléter les fiches manquantes et activer la complétion automatique.
+        </p>
+
+        <div class="filter-grid">
+          <div class="filter-group">
+            <label>URL base distante</label>
+            <input type="url" id="remoteDbUrl" placeholder="https://.../database.json">
+          </div>
+
+          <div class="filter-group">
+            <label>Clé API Gemini</label>
+            <input type="password" id="aiKey" placeholder="Clé API Gemini">
+          </div>
+
+          <div class="filter-group">
+            <label>Modèle Gemini</label>
+            <input type="text" id="aiModel" placeholder="gemini-1.5-flash-latest">
+          </div>
+
+          <div class="filter-group">
+            <label>Base générée à l'ouverture</label>
+            <select id="autoLoadGenerated">
+              <option value="if_empty">Si base locale vide</option>
+              <option value="always">Toujours charger</option>
+              <option value="off">Désactivé</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label>Complétion automatique ouverture</label>
+            <select id="autoEnrichOnOpen">
+              <option value="off">Désactivée</option>
+              <option value="missing">Fiches manquantes</option>
+              <option value="all">Toutes les fiches</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label>Max fiches / session</label>
+            <input type="number" id="aiMaxPerSession" min="1" max="1000" step="1" value="10">
+          </div>
+
+          <div class="filter-group">
+            <label>Délai entre appels IA (ms)</label>
+            <input type="number" id="aiDelayMs" min="500" step="100" value="2500">
+          </div>
+        </div>
+
+        <div class="admin-actions">
+          <button class="btn btn-secondary" onclick="document.getElementById('dbFileInput').click()">📥 Importer JSON</button>
+          <input
+            type="file"
+            id="dbFileInput"
+            accept=".json,application/json"
+            style="display:none"
+            onchange="importDatabaseFile(event)"
+          >
+
+          <button class="btn btn-secondary" onclick="loadRemoteDatabase()">🌐 Charger URL</button>
+          <button class="btn btn-secondary" onclick="exportDatabase()">📤 Exporter base</button>
+          <button class="btn btn-secondary" onclick="validateDatabaseUI()">🧪 Valider base</button>
+          <button class="btn" onclick="saveAISettings()">💾 Enregistrer réglages</button>
+        </div>
+
+        <div class="admin-actions">
+          <button class="btn" onclick="aiAssist()">🤖 IA fiche sélectionnée</button>
+          <button class="btn" onclick="startGeminiEnrichment('missing')">🚀 Charger fiches manquantes</button>
+          <button class="btn" onclick="startGeminiEnrichment('all')">♻️ Toutes fiches</button>
+          <button class="btn btn-danger" onclick="stopGeminiEnrichment()">⏹ Stop IA</button>
+          <span id="aiProgress" style="margin-left:auto;color:var(--muted);font-size:0.85rem;"></span>
+        </div>
+
+        <pre id="adminOutput">Prêt.</pre>
+
+        <p style="color:var(--muted); font-size:0.8rem; margin-top:0.8rem;">
+          ⚠️ Les valeurs générées par Gemini sont marquées comme candidates.
+          Elles ne doivent être considérées comme exactes qu’après validation avec une source officielle.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="status-bar">
+    <span id="status">Vérification de la connexion...</span>
+  </div>
+
+  <div class="modal" id="adminModal">
+    <div class="modal-content">
+      <h2>🔐 Connexion administrateur</h2>
+
+      <input
+        type="password"
+        id="adminPwd"
+        placeholder="Mot de passe"
+        onkeypress="if(event.key==='Enter') submitAdmin()"
+      >
+
+      <div style="display:flex; gap:0.5rem; margin-top:1rem;">
+        <button class="btn" onclick="submitAdmin()">Valider</button>
+        <button class="btn btn-secondary" onclick="closeAdminModal()">Annuler</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
