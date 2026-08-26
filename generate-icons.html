@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Générateur d'icônes — AutoEntretien Pro</title>
+<style>
+  body{font-family:system-ui,-apple-system,sans-serif;background:#0f172a;color:#f1f5f9;display:flex;flex-direction:column;align-items:center;gap:1rem;padding:2rem;text-align:center}
+  button{background:#f59e0b;color:#000;border:none;padding:.8rem 1.4rem;border-radius:10px;font-weight:700;font-size:1rem;cursor:pointer}
+  button:active{transform:scale(.97)}
+  .previews{display:flex;gap:1rem;align-items:flex-end}
+  canvas{border-radius:18px;box-shadow:0 6px 24px rgba(0,0,0,.5)}
+  p{color:#94a3b8;max-width:520px}
+  b{color:#f1f5f9}
+</style>
+</head>
+<body>
+  <h1>🚗 Générateur d'icônes</h1>
+  <p>Cette page crée <b>icon-192.png</b> et <b>icon-512.png</b>. Téléchargez-les puis uploadez-les dans le dossier <b>icons/</b> de votre repository GitHub.</p>
+
+  <div class="previews">
+    <canvas id="p192" width="192" height="192"></canvas>
+    <canvas id="p96" width="96" height="96"></canvas>
+  </div>
+
+  <button onclick="download(192)">⬇️ icon-192.png</button>
+  <button onclick="download(512)">⬇️ icon-512.png</button>
+  <button onclick="download(192);setTimeout(function(){download(512)},700)">⬇️ Tout télécharger</button>
+
+<script>
+function drawIcon(size){
+  var c=document.createElement("canvas");
+  c.width=size;c.height=size;
+  var x=c.getContext("2d");
+  var u=size/512;
+
+  var g=x.createLinearGradient(0,0,size,size);
+  g.addColorStop(0,"#1e40af");
+  g.addColorStop(1,"#0f172a");
+  x.fillStyle=g;
+  x.fillRect(0,0,size,size);
+
+  x.fillStyle="rgba(245,158,11,0.15)";
+  x.beginPath();
+  x.arc(256*u,250*u,210*u,0,Math.PI*2);
+  x.fill();
+
+  x.fillStyle="#ffffff";
+  x.beginPath();
+  x.moveTo(96*u,300*u);
+  x.quadraticCurveTo(96*u,258*u,142*u,250*u);
+  x.lineTo(182*u,244*u);
+  x.quadraticCurveTo(212*u,188*u,272*u,186*u);
+  x.lineTo(322*u,186*u);
+  x.quadraticCurveTo(372*u,188*u,400*u,244*u);
+  x.lineTo(402*u,250*u);
+  x.quadraticCurveTo(416*u,258*u,416*u,300*u);
+  x.quadraticCurveTo(416*u,318*u,398*u,318*u);
+  x.lineTo(114*u,318*u);
+  x.quadraticCurveTo(96*u,318*u,96*u,300*u);
+  x.closePath();
+  x.fill();
+
+  x.fillStyle="#1e40af";
+  x.beginPath();
+  x.moveTo(198*u,242*u);
+  x.quadraticCurveTo(222*u,202*u,268*u,200*u);
+  x.lineTo(268*u,242*u);
+  x.closePath();
+  x.fill();
+
+  x.beginPath();
+  x.moveTo(284*u,242*u);
+  x.lineTo(284*u,200*u);
+  x.lineTo(318*u,200*u);
+  x.quadraticCurveTo(354*u,204*u,378*u,242*u);
+  x.closePath();
+  x.fill();
+
+  x.fillStyle="#0f172a";
+  x.beginPath();x.arc(176*u,318*u,46*u,0,Math.PI*2);x.fill();
+  x.beginPath();x.arc(336*u,318*u,46*u,0,Math.PI*2);x.fill();
+  x.fillStyle="#f59e0b";
+  x.beginPath();x.arc(176*u,318*u,20*u,0,Math.PI*2);x.fill();
+  x.beginPath();x.arc(336*u,318*u,20*u,0,Math.PI*2);x.fill();
+
+  x.save();
+  x.translate(392*u,120*u);
+  x.fillStyle="#f59e0b";
+  x.beginPath();x.arc(0,0,66*u,0,Math.PI*2);x.fill();
+  x.rotate(-Math.PI/4);
+  x.fillStyle="#0f172a";
+  x.fillRect(-8*u,-11*u,72*u,22*u);
+  x.beginPath();x.arc(-30*u,0,26*u,0,Math.PI*2);x.fill();
+  x.fillStyle="#f59e0b";
+  x.fillRect(-64*u,-9*u,34*u,18*u);
+  x.restore();
+
+  return c;
+}
+
+function download(size){
+  var a=document.createElement("a");
+  a.download="icon-"+size+".png";
+  a.href=drawIcon(size).toDataURL("image/png");
+  a.click();
+}
+
+document.getElementById("p192").getContext("2d").drawImage(drawIcon(192),0,0);
+document.getElementById("p96").getContext("2d").drawImage(drawIcon(512),0,0,96,96);
+</script>
+</body>
+</html>
