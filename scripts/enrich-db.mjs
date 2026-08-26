@@ -32,16 +32,28 @@ const MAINTENANCE_FIELDS = [
 ];
 
 function loadDatabase() {
+  if (!fs.existsSync(DB_PATH)) {
+    console.error("database.json introuvable.");
+    process.exit(1);
+  }
+
+  const catalog = JSON.parse(fs.readFileSync(DB_PATH, "utf8"));
+
   if (fs.existsSync(OUT_PATH)) {
-    return JSON.parse(fs.readFileSync(OUT_PATH, "utf8"));
+    const generated = JSON.parse(fs.readFileSync(OUT_PATH, "utf8"));
+    const byId = new Map((generated.engines || []).map((e) => [e.id, e]));
+
+    for (const engine of catalog.engines || []) {
+      const g = byId.get(engine.id);
+      if (g && g.maintenance) {
+        engine.maintenance = g.maintenance;
+      }
+    }
+
+    console.log("Fusion avec database.generated.json effectuée.");
   }
 
-  if (fs.existsSync(DB_PATH)) {
-    return JSON.parse(fs.readFileSync(DB_PATH, "utf8"));
-  }
-
-  console.error("Aucun fichier database.json ou database.generated.json trouvé.");
-  process.exit(1);
+  return catalog;
 }
 
 function needsEnrichment(engine) {
