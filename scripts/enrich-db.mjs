@@ -4,7 +4,7 @@ const DB_PATH = process.env.DB_PATH || "database.json";
 const OUT_PATH = process.env.OUT_PATH || "database.generated.json";
 
 const KEY = process.env.GEMINI_API_KEY;
-const MODEL = process.env.GEMINI_MODEL || "gemini-1.5-flash-latest";
+const MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
 
 const MAX = Number(process.env.ENRICH_MAX || 20);
 const DELAY_MS = Number(process.env.ENRICH_DELAY_MS || 3000);
