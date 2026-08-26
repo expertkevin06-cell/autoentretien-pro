@@ -1,7 +1,7 @@
 const APP_CONFIG = {
   adminPassword: "Kevin83600",
   defaultRemoteDbUrl: "",
-  defaultGeminiModel: "gemini-1.5-flash-latest"
+  defaultGeminiModel: "gemini-2.5-flash"
 };
 
 const MAINTENANCE_FIELDS = [
